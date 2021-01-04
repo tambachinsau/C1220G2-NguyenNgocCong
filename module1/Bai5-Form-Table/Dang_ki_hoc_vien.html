@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<style> p {margin-left: 40px} p.acc {margin-left: 0px}
+p.add{
+    display: flex;
+    align-content: start;
+}
+    form {font-family: "Lucida Sans Unicode", Tahoma, sans-serif; background-color: bisque; border-style: solid; border-color: orange; border-width: 6px;margin: auto}
+</style>
+<body>
+
+
+<form style="width: 450px" method="get">
+    <p class="acc" style="font-size: 40px;background-color: orange; text-align: center"> ĐĂNG KÝ HỌC VIÊN </p>
+    <p> Họ và tên <input type="text" size="40px" style="height: 20px"/> </p>
+    <p> Ngày sinh <input type="text" size="40px" style="height: 20px"/> </p>
+    <p> Giới tính <input type="radio" name="gender" value="nam" style="margin-left: 13px" /> Nam <input type="radio" name="gender" value="nu" /> Nữ  </p>
+    <p class="add"> <label>Địa chỉ</label> <textarea style="height: 80px;width: 290px; margin-left: 26px"> </textarea></p>
+    <p> Lớp <select style="margin-left: 45px;font-size: 17px">
+                <option> - Chọn lớp - </option>
+                <option> C0920G1 </option>
+                <option> C1120G1 </option>
+                <option> C1220G1 </option>
+                <option> C0121G1 </option>
+            </select>
+    </p>
+    <p> Email <input type="text" size="40px" style="height: 20px; margin-left: 33px"/> </p>
+    <p> Điện thoại <input type="text" size="40px" style="height: 20px" name="phone" value/> </p>
+    <input type="submit" value="Đăng ký" style="margin-left: 117px;font-size: 17px; margin-bottom: 35px"/> <input type="reset" value="Nhập lại" style="font-size: 17px"/>
+</form>
+</body>
+</html>

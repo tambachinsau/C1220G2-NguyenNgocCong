@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đơn giản</title>
+    <style>
+        form { text-align: center; border-style: solid; border-color: orange; width: 500px; height: 320px ; margin: auto; border-width: 6px; background-color: bisque }
+        span { color: orange}
+    </style>
+</head>
+
+<body>
+    <form>
+        <p style="text-align: center; font-size: 40px; color: black; background: orange; margin-top: 30px"> SỞ THÍCH CỦA BẠN</p>
+        <p style="margin-right: 20px"> Họ và tên: <input type="text" size="30px" name="yourname"/> </p>
+        <p style="margin-right: 20px "> Email: <input type="text" size="30px" style="margin-left: 25px" name="email"/> </p>
+        <span style="color: black; margin-left: 30px"> Sở thích: </span>
+        <input type="checkbox" style="margin-left: 8px" name="hobby" value="theothao"/> <span> Thể thao </span>
+        <input type="checkbox" style="margin-left: 15px"name="hobby" value="amnhac"/> <span> Âm nhạc </span>
+        <input type="checkbox" style="margin-left: 17px"name="hobby" value="docsach"/> <span> Đọc sách </span>
+        <br/>
+        <input type="checkbox" style="margin-left: 102px" name="hobby" value="luotweb"/> <span> Lướt web </span>
+        <input type="checkbox" style="margin-left: 8px" name="hobby" value="choigame" /> <span> Chơi game </span>
+        <input type="checkbox" name="hobby" value="dienanh" /> <span> Điện ảnh </span>
+        <br/>
+        <input type="checkbox" /> <span style="margin-right: 108px" name="hobby" value="dulich" > Du lịch</span>
+        <br/> <br/>
+        <input type="submit" value="Gửi thông tin" style="font-size: 15px;margin-left: 5px"/> <input type="reset" value="Nhập lại" style="font-size: 15px"/>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style> p {font-family: ".SF NS Display";font-size: 25px;background-color: orange;width: 503px; text-align: center}
+        button {margin-left: 200px;margin-bottom: 20px; background-color: orange; color: white;font-size: 20px}
+        table {margin: auto}
+</style>
+<body>
+<table border="2px" style="border-color: orange" >
+    <tr> <td>
+<p> Hiển thị kết quả sử dụng hàm alert</p>
+<button onclick="mot()"> Click me </button> </td>
+    <td>
+<p> Hiển thị kết quả sử dụng thẻ html</p>
+<button onclick="hai()"> Click me </button>
+<span style="color: orange;margin-left: 20px;"  id="dada"></span> </td>
+    </tr>
+    <tr> <td>
+<p> Hiển thị kết quả sử dụng hàm document.write()</p>
+<button onclick="ba()"> Click me </button> </td>
+        <td>
+<p> Hiển thị kết quả sử dụng hàm console.log()</p>
+<button onclick="bon()"> Click me </button> </td>
+    </tr>
+
+</table>
+
+
+<script>
+    function mot() {
+    alert('Hello world')
+    }
+    function hai() {
+        document.getElementById('dada').innerHTML = "Hello world"
+    }
+    function ba() {
+        document.write('Hello world')
+    }
+    function bon() {
+        console.log('Hello word')
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
