@@ -9,23 +9,18 @@
 </style>
 <body>
 <div style="width: 500px">
-    <p>1. Nhúng JS ngay trong thẻ con html</p>
-    <img src="1.png"/> <br/> <br/>
+    <p>1. Nhúng JS ngay trong thẻ html</p>
     <button onclick="alert('Hello world')"> Click me!</button>
 <hr/>
     <p>2. Nhúng JS trong html bằng thẻ &lt;script&gt; </p>
-    <img src="2.png"/> <br/> <br/>
     <button onclick="mot()"> Click me!</button>
     <span id="text"></span> <hr/>
         <script>
     function mot() {
         document.getElementById('text').innerHTML = "Hello world"
-
     }
         </script>
-
     <p>3. Nhúng JS bằng file JS riêng biệt</p>
-    <img src="3.png"/> <br/> <br/>
     <button onclick="hai()"> Click me!</button>
     <span id="text2"> </span>
     <script src="nhungfileJS.js"></script>
