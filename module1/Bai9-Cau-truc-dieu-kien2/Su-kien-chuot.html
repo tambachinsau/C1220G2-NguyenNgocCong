@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>move</title>
+</head>
+<body>
+    <form>
+        <img id="myImage" src="https://image-cdn.neatoshop.com/styleimg/107622/none/navy/default/464755-20;1595515979v.jpg"> <br>
+        <p> Click button below to move the dolphin </p>
+        <input onclick="moveRight()" type="button" value="Move forward">
+        <input onclick="moveLeft()" type="button" value="Move backward">
+    </form>
+    <script>
+        let photo = document.getElementById("myImage");
+        function init() {
+            photo = document.getElementById("myImage");
+            photo.style.position = 'relative';
+            photo.style.left = '0px';
+        }
+        function moveRight() {
+            photo.style.left =parseInt(photo.style.left) + 10 + 'px';
+        }
+        window.onload = init();
+        function moveLeft() {
+            photo.style.left =parseInt(photo.style.left) - 10 + 'px';
+        }
+        window.onload = init();
+    </script>
+</body>
+</html>
