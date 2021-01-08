@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>Amount</span> <input id="sotien" type="number"> <br> <br>
+<span>From</span> <select id="from">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<span>To</span> <select id="to">
+    <option value="usd">USD</option>
+    <option value="vnd">VND</option>
+</select> <br> <br>
+<button value="Convert" onclick="convert()"> Convert </button> <br> <br>
+<span> Result: </span> <span id="result"></span>
+<script>
+    function convert() {
+        let A = document.getElementById('sotien').value
+        let F = document.getElementById('from').value
+        let T = document.getElementById('to').value
+        if (F == T) {
+            document.getElementById('result').innerHTML = A
+        } else if (F == "vnd" && T == "usd") {
+            document.getElementById('result').innerHTML = A / 23000
+        } else {
+            document.getElementById('result').innerHTML = A * 23000
+        }
+
+    }
+</script>
+</body>
+</html>
